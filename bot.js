@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = 'NTEwOTEyMTU5ODk5ODQ0NjA5.W-c-Bw.kHkMG4VMwgpYCm65CK2ZGXrOK2A';
+const token = process.env.token;
 var prefix = '!';
 var jArray = ['1', '2', '3'];
 var goons = 'goons';
@@ -30,7 +30,10 @@ client.on("message", (message) => {
 	const command = args.shift().toLowerCase();
 	if (message.author.id == edinID)
 	{
-		message.channel.send("Serbian.");
+		if (message.content.startsWith(prefix))
+		{
+				message.channel.send("Serbian.");
+		}
 	}
 	else
 	{
