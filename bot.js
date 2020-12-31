@@ -20,8 +20,8 @@ for(const file of commandFiles){
 
 client.on("ready", () => {
     console.log("I am ready!");
-    client.user.setActivity('jays server getting bodied', {
-        type: 'WATCHING'
+    client.user.setActivity('Play cyberfuck 1987 at 57p', {
+        type: 'PLAYING'
     });
 });
 // update using this vid -> https://www.youtube.com/watch?v=AUOb9_aAk7U&ab_channel=CodeLyon
