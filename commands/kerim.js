@@ -1,8 +1,8 @@
 module.exports = {
 	name: 'kerim',
-	description: "this is the rank command!",
+	description: "Kerim be like!",
 	execute(message,args){
-		var randomJ = Math.floor(Math.random() * 4);  //case switcher
+		var randomJ = Math.floor(Math.random() * 3);  //case switcher
 		var randomI = Math.floor(Math.random() * 4);  //kerim choking
 		const edin = "Edin <@374998852840718337>,";	  //string for repeat
 		switch(randomJ){
@@ -16,7 +16,7 @@ module.exports = {
 				message.channel.send(edin + ' do not AMD have console processors?');
 				break;
 			default:
-				message.channel.send(edin + "fix your stupid bot balega.");
+				message.channel.send(edin + " fix your stupid bot balega.");
 		}
 	}
 }
