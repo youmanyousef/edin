@@ -7,6 +7,7 @@ var goons = 'goons';
 var gArray = [];
 
 const edinID = "374998852840718337";
+const edinIDAlt = "700096282785480734";
 const fs = require('fs');
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -28,7 +29,7 @@ client.on("ready", () => {
 client.on("message", (message) => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-	if (message.author.id == edinID)
+	if (message.author.id == edinID || message.author.id == edinIDAlt)
 	{
 		if (message.content.startsWith(prefix))
 		{
