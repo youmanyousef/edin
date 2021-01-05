@@ -27,23 +27,25 @@ client.on("ready", () => {
 });
 // update using this vid -> https://www.youtube.com/watch?v=AUOb9_aAk7U&ab_channel=CodeLyon
 client.on("message", (message) => {
-	const args = message.content.slice(prefix.length).split("[!]");
+	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-	if (message.author.id == edinID || message.author.id == edinIDAlt)
+	if (message.content.startsWith(prefix))
 	{
-		if (message.content.startsWith(prefix))
+		if (message.author.id == edinID || message.author.id == edinIDAlt)
 		{
-				message.channel.send("Serbian.");
+			message.channel.send("Serbian.");
+		
 		}
+		else
+		{
+			if (command === 'rank'){
+				client.commands.get('rank').execute(message,args);
+			}
+			if (command === 'kerim'){
+				client.commands.get('kerim').execute(message,args);
+			}
+		}	
 	}
-	else
-	{
-		if (command === 'rank'){
-			client.commands.get('rank').execute(message,args);
-		}
-		if (command === 'kerim'){
-			client.commands.get('kerim').execute(message,args);
-		}
-	}
+	
 });
 client.login(token);
