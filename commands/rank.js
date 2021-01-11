@@ -27,7 +27,7 @@ module.exports = {
 						"url": "https://i.imgur.com/AJPOl7L.gif"
 					},
 					"author": {
-						"name": "Govno Tactics",
+						"name": "Govno Tactics By Brus Li",
 						"icon_url": "https://i.imgur.com/asPLuuO.png"
 					},
 					"fields": [
