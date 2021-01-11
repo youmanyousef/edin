@@ -21,7 +21,7 @@ module.exports = {
 					"color": 1091111,
 					"footer": {
 						"icon_url": "https://i.imgur.com/asPLuuO.png",
-						"text": "footner text <@329556848111910922>"
+						"text": "footner text"
 					},
 					"thumbnail": {
 						"url": "https://i.imgur.com/AJPOl7L.gif"
@@ -38,7 +38,7 @@ module.exports = {
 						},
 						{
 							"name": "!rank",
-							"value": "hair\nmod\nwallet\nmad\nsegway\nlore\ntrap\nbond\n",
+							"value": "hair\nmod\nwallet\nmad\nsegway\nlore\ntrap\nbond\n\n<@329556848111910922>",
 							"inline": true
 						}
 					]
